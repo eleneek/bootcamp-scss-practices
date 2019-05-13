@@ -2,21 +2,23 @@ $color-1:#E2E6E7;
 $color-2:#FFC12D;
 $color-3:#F9B718;
 $color-4:#2C3E50;
-$color-5:#A1B1BC;
 $color-6:#CFD2D3;
 $color-7:#A47503;
-$color-8-green-bg:#97E411;
+$color-8-yellow-close:#B18009;
 $color-9-green-border:#7BC200;
 $color-10-green-icon:#558502;
-$color-11-red-bg:#FD7761;
 $color-12-red-border:#F55C43;
 $color-13-red-icon:#D52E13;
-$color-14-blue-bg:#6FD9FC;
 $color-15-blue-border:#47B4F6;
 $color-16-blue-icon:#0787D4;
-$color-17-purple-bg:#A39CDC;
 $color-18-purple-border:#8781BD;
-$color-19-putple-icon:#5B568E;
+$color-19-purple-icon:#5B568E;
+$color-20-whole-yellow-bg:#FFC12D;
+$color-21-whole-red-bg:#FEB1A4;
+$color-22-whole-green-bg:#A7EC2F;
+$color-23-whole-blue-bg:#85EBFA;
+$color-24-whole-purple-bg:#AACDF6;
+
 
 
 * {
@@ -62,7 +64,7 @@ body {
         }
 
         & p{
-            color: $color-5;;
+            color: $color-4;
             font-family: 'Lato';
             font-weight: 400;
             font-size: 14px;
@@ -79,7 +81,6 @@ body {
         &::before{
             content: '\f00d';
             font-family: 'FontAwesome';
-            color: $color-6;
             font-size: 14px;
             line-height: 24px;
         }
@@ -92,7 +93,7 @@ body {
         line-height: 26px;
         font-family: 'FontAwesome';
         padding: 12px 20px;
-        background: $color-2;
+        background: $color-20-whole-yellow-bg;
         border: 7px solid $color-3;
         border-radius: 50%;
         margin: 43px 30px 41px 50px;
@@ -109,7 +110,7 @@ body {
         line-height: 26px;
         font-family: 'FontAwesome';
         padding: 13px 12px;
-        background: $color-8-green-bg;
+        background: $color-22-whole-green-bg;
         border: 7px solid $color-9-green-border;
         border-radius: 50%;
         margin: 40px 30px 41px 50px;
@@ -125,7 +126,7 @@ body {
         line-height: 26px;
         font-family: 'FontAwesome';
         padding: 10px 15.6px;
-        background: #FD7761;
+        background: $color-21-whole-red-bg;
         border: 7px solid #F55C43;
         border-radius: 50%;
         margin: 41px 28px 43px 50px;
@@ -142,7 +143,7 @@ body {
         line-height: 26px;
         font-family: 'FontAwesome';
         padding: 13px 18px;
-        background: $color-14-blue-bg;
+        background: $color-23-whole-blue-bg;
         border: 7px solid $color-15-blue-border;
         border-radius: 50%;
         margin: 40px 30px 41px 50px;
@@ -157,10 +158,41 @@ body {
         line-height: 26px;
         font-family: 'FontAwesome';
         padding: 13px 21px;
-        background: $color-17-purple-bg;
+        background: $color-24-whole-purple-bg;
         border: 7px solid $color-18-purple-border;
         border-radius: 50%;
         margin: 41px 28px 41px 50px;
-        color: $color-19-putple-icon;
+        color: $color-19-purple-icon;
     }
+}
+
+.yellow-bg{
+    background:$color-20-whole-yellow-bg;
+}
+.green-bg{
+    background:$color-22-whole-green-bg;
+}
+.red-bg{
+    background:$color-21-whole-red-bg;
+}
+.blue-bg{
+    background:$color-23-whole-blue-bg;
+}
+.purple-bg{
+    background:$color-24-whole-purple-bg;
+}
+.close-yellow{
+    color: $color-8-yellow-close;
+}
+.close-green{
+    color: $color-10-green-icon;
+}
+.close-red{
+    color: $color-13-red-icon;
+}
+.close-blue{
+    color: $color-16-blue-icon;
+}
+.close-purple{
+    color: $color-19-purple-icon;
 }
