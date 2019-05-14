@@ -1,14 +1,16 @@
-@mixin icon($content, $padding-top, $padding-right, $padding-bottom, $padding-left, $background, $color, $border, $border-radius,
+@mixin icon($content, $background, $color, $border, $border-radius,
 $margin-top, $margin-right, $margin-bottom, $margin-left) {
     content: $content;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
     margin-top: $margin-top;
     margin-right: $margin-right;
     margin-bottom: $margin-bottom;
     margin-left: $margin-left;
-    padding-top: $padding-top;
-    padding-right: $padding-right;
-    padding-bottom: $padding-bottom;
-    padding-left: $padding-left;
     border: $border;
     border-radius: $border-radius;
     background: $background;

@@ -7,9 +7,13 @@
 
 .row {
     display: flex;
-    width: 1138px;
+    width: 1197px;
     height: 150px;
     margin-bottom: 31px;
+
+    section {
+        margin-right: 30px;
+    }
 }
 
 .row2 {
