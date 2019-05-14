@@ -1,0 +1,135 @@
+@import '_icon';
+
+$font-family1:'Lato';
+$font-family2:'FontAwesome';
+
+.alert {
+    display: flex;
+    position: relative;
+    width: 100%;
+    border: 1px solid $color-1;
+    border-radius: 10px;
+
+    &::before {
+        font-family: $font-family2;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    & div {
+
+        & h5 {
+            margin-top: 34px;
+            margin-bottom: 6px;
+            color: $color-4;
+            font-family: $font-family1;
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: 1.3px;
+            line-height: 26px;
+            text-transform: uppercase;
+        }
+
+        & p {
+            padding-right: 40px;
+            color: $color-4;
+            font-family: $font-family1;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    & a {
+        position: absolute;
+        top: 12px;
+        right: 17px;
+        text-decoration: none;
+
+        &::before {
+            content: '\f00d';
+            font-family: $font-family2;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+.yellow-alert {
+
+    &::before {
+        @include icon('\f12a',12px,20px,12px,20px,$color-20-whole-yellow-bg,$color-7,7px solid $color-3,50%,43px,30px,41px,50px);
+    }
+}
+
+.green-alert {
+    margin-right: -32px;
+    margin-left: 31px;
+
+    &::before {
+        @include icon( '\f00c',13px,12px,13px,12px,$color-22-whole-green-bg,$color-10-green-icon,7px solid $color-9-green-border,50%,40px,28px,41px,50px);
+    }
+}
+
+.red-alert {
+
+    &::before {
+        @include icon( '\f00d',10px,15.6px,10px,15.6px,$color-21-whole-red-bg,$color-13-red-icon,7px solid $color-13-red-icon,50%,41px,28px,43px,50px);
+    }
+}
+
+.blue-alert {
+    margin-right: -32px;
+    margin-left: 31px;
+
+    &::before {
+        @include icon( '\f0e7',13px,18px,13px,18px,$color-23-whole-blue-bg,$color-16-blue-icon,7px solid $color-15-blue-border,50%,40px,30px,41px,50px);
+    }
+}
+
+.purple-alert {
+
+    &::before {
+        @include icon( '\f129',13px,21px,13px,21px,$color-24-whole-purple-bg,$color-19-purple-icon,7px solid $color-18-purple-border,50%,41px,28px,41px,50px);
+    }
+}
+
+.yellow-bg {
+    background: $color-20-whole-yellow-bg;
+}
+
+.green-bg {
+    background: $color-22-whole-green-bg;
+}
+
+.red-bg {
+    background: $color-21-whole-red-bg;
+}
+
+.blue-bg {
+    background: $color-23-whole-blue-bg;
+}
+
+.purple-bg {
+    background: $color-24-whole-purple-bg;
+}
+
+.close-yellow {
+    color: $color-8-yellow-close;
+}
+
+.close-green {
+    color: $color-10-green-icon;
+}
+
+.close-red {
+    color: $color-13-red-icon;
+}
+
+.close-blue {
+    color: $color-16-blue-icon;
+}
+
+.close-purple {
+    color: $color-19-purple-icon;
+}

@@ -1,0 +1,16 @@
+@mixin icon($content, $padding-top, $padding-right, $padding-bottom, $padding-left, $background, $color, $border, $border-radius,
+$margin-top, $margin-right, $margin-bottom, $margin-left) {
+    content: $content;
+    margin-top: $margin-top;
+    margin-right: $margin-right;
+    margin-bottom: $margin-bottom;
+    margin-left: $margin-left;
+    padding-top: $padding-top;
+    padding-right: $padding-right;
+    padding-bottom: $padding-bottom;
+    padding-left: $padding-left;
+    border: $border;
+    border-radius: $border-radius;
+    background: $background;
+    color: $color;
+}
